@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fluxo"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="br.edu.infnet.android.teste3.ui.dashboard.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/navega_para_adicionaCartao"
+            app:destination="@id/fragmentAdicionarTransicao"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAdicionarTransicao"
+        android:name="br.edu.infnet.android.teste3.ui.addTransicao.AdicionarTransicaoFragment"
+        android:label="fragment_adicionar_transicao"
+        tools:layout="@layout/fragment_adicionar_transicao" >
+        <argument
+            android:name="cardId"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="transicaoCard"
+            app:argType="br.edu.infnet.android.teste3.dominio.TransicaoCard"
+            app:nullable="true" />
+    </fragment>
+    <action android:id="@+id/retorna_HomeFragment" app:destination="@id/dashboardFragment" />
+
+</navigation>

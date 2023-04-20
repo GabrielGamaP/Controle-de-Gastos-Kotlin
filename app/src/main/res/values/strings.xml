@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Dev Bank</string>
+    <string name="txt_salvar">Salvar</string>
+    <string name="txt_receita">Receitas</string>
+    <string name="txt_despesas">Despesas</string>
+    <string name="txt_total">Total</string>
+    <string name="txt_historico">Histórico</string>
+    <string name="txt_acao_quando">Quando</string>
+    <string name="txt_acao_valor">Valor</string>
+    <string name="txt_acao_tipoDeTransicao">Tipo de Transição</string>
+    <string name="txt_acao_categpria">Categoria</string>
+    <string name="txt_acao_obs">Obs</string>
+    <string name="txt_nome">Nome</string>
+    <string name="text_about">About</string>
+    <string name="txt_editar">Editar</string>
+    <string name="txt_criadoEm">Criando Em:</string>
+    <string name="label_share">Compartilhar</string>
+    <string name="dialog_delete_msg">Apagar o cartão? Essa ação não pode ser desfeita!</string>
+    <string name="label_no">Não</string>
+    <string name="label_yes">Sim</string>
+    <string name="dialog_title_delete">Apagar cartão</string>
+    
+    <string-array name="categorias">
+        <item>Comida</item>
+        <item>Contas</item>
+        <item>Educação</item>
+        <item>Lazer</item>
+        <item>Saúde</item>
+    </string-array>
+
+    <string-array name="tipoTransicao">
+        <item>Receita</item>
+        <item>Despesa</item>
+    </string-array>
+
+
+    <string name="description_add_card_fragment">Adicionar um cartão</string>
+    <string name="description_edit_card_fragment">Editar um cartão</string>
+</resources>
